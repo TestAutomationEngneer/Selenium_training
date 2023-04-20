@@ -1,0 +1,4 @@
+1430 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+1449 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\djach\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+4127 [main] INFO  tests.BaseTest.class - Driver is opened
+4304 [main] INFO  tests.BaseTest.class - Driver is closed

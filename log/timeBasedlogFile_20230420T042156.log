@@ -1,0 +1,6 @@
+3933 [main] INFO  pages.base.BasePage - Element: Quick view has been clicked
+5025 [main] INFO  pages.base.BasePage - Waiting for 
+5197 [main] INFO  pages.base.BasePage - Waiting for 
+5399 [main] INFO  pages.base.BasePage - Waiting for 
+5571 [main] INFO  pages.base.BasePage - Waiting for 
+5728 [main] INFO  tests.BaseTest.class - Driver is closed

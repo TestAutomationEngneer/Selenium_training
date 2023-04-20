@@ -1,0 +1,4 @@
+4977 [main] INFO  pages.base.BasePage - Element: [[ChromeDriver: chrome on WINDOWS (96f3cf9221cab63612a5deede0e6f33f)] -> css selector: .submenu-container>li:nth-of-type(1)>ul>li:nth-child(2)>a] has been clicked
+5328 [main] INFO  pages.base.BasePage - Waiting for Quick view
+5492 [main] INFO  pages.base.BasePage - Element: [[ChromeDriver: chrome on WINDOWS (96f3cf9221cab63612a5deede0e6f33f)] -> css selector: .quick-view] has been clicked
+15940 [main] INFO  tests.BaseTest.class - Driver is closed

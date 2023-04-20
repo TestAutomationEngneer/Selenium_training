@@ -1,0 +1,17 @@
+593 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+608 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\djach\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+2496 [main] INFO  tests.BaseTest.class - Driver is opened
+2727 [main] INFO  pages.base.BasePage - Waiting for WOMEN
+2784 [main] INFO  pages.base.BasePage - Waiting for Blouses
+2847 [main] INFO  pages.base.BasePage - Waiting for Blouses
+3459 [main] INFO  pages.base.BasePage - Element: Blouses has been clicked
+3520 [main] INFO  pages.base.BasePage - Waiting for 
+3680 [main] INFO  pages.base.BasePage - Waiting for 
+3728 [main] INFO  pages.base.BasePage - Waiting for Quick view
+3778 [main] INFO  pages.base.BasePage - Waiting for Quick view
+3924 [main] INFO  pages.base.BasePage - Element: Quick view has been clicked
+4498 [main] INFO  pages.base.BasePage - Waiting for 
+4698 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/5/5-cart_default.jpg
+4916 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/6/6-cart_default.jpg
+5101 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/7/7-cart_default.jpg
+5273 [main] INFO  tests.BaseTest.class - Driver is closed

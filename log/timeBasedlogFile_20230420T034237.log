@@ -1,0 +1,8 @@
+580 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+597 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\djach\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+3865 [main] INFO  tests.BaseTest.class - Driver is opened
+4150 [main] INFO  pages.base.BasePage - Waiting for Blouses
+4771 [main] INFO  pages.base.BasePage - Element: [[ChromeDriver: chrome on WINDOWS (6695c8c412155755ded9e23d710d87b5)] -> css selector: .submenu-container>li:nth-of-type(1)>ul>li:nth-child(2)>a] has been clicked
+5002 [main] INFO  pages.base.BasePage - Waiting for Quick view
+5140 [main] INFO  pages.base.BasePage - Element: [[ChromeDriver: chrome on WINDOWS (6695c8c412155755ded9e23d710d87b5)] -> css selector: .quick-view] has been clicked
+15295 [main] INFO  tests.BaseTest.class - Driver is closed

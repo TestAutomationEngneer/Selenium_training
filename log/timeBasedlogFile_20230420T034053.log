@@ -1,0 +1,3 @@
+11293 [main] INFO  pages.base.BasePage - Waiting for Quick view
+11448 [main] INFO  pages.base.BasePage - Element: [[ChromeDriver: chrome on WINDOWS (4a46236f61f7cf96c7f7902b875107c7)] -> css selector: .quick-view] has been clicked
+22646 [main] INFO  tests.BaseTest.class - Driver is closed
