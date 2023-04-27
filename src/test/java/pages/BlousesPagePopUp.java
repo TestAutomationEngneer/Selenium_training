@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,4 +47,18 @@ public class BlousesPagePopUp extends BasePage {
         driver.switchTo().frame(iframe);
         return this;
     }
+
+    public void verifyProductImages(List<WebElement> productImages) {
+        for (int i = 0; i < productImages.size(); i++) {
+            moveMouseToImage(i, productImages);
+            String miniatureSrc = productImages.get(i).getAttribute("src").replace("-cart_default.jpg", "");
+            String bigPicSrc = getBigPic().getAttribute("src").replace("-large_default.jpg", "");
+            Assertions.assertEquals(miniatureSrc, bigPicSrc);
+        }
+    }
+
+    public void moveMouseToImage(int index, List<WebElement> productImages) {
+        mouseMover(productImages.get(index));
+    }
+
 }

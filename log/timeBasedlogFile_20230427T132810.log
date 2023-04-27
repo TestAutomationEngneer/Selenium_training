@@ -1,0 +1,33 @@
+813 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+838 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\djach\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+3141 [main] INFO  tests.BaseTest.class - Driver is opened
+3424 [main] INFO  pages.base.BasePage - Waiting for WOMEN
+3519 [main] INFO  pages.base.BasePage - Waiting for Blouses
+3640 [main] INFO  pages.base.BasePage - Waiting for Blouses
+4313 [main] INFO  pages.base.BasePage - Element: Blouses has been clicked
+4402 [main] INFO  pages.base.BasePage - Waiting for 
+4587 [main] INFO  pages.base.BasePage - Waiting for 
+4675 [main] INFO  pages.base.BasePage - Waiting for Quick view
+4775 [main] INFO  pages.base.BasePage - Waiting for Quick view
+4928 [main] INFO  pages.base.BasePage - Element: Quick view has been clicked
+6036 [main] INFO  pages.base.BasePage - Waiting for 
+6270 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/5/5-cart_default.jpg
+6533 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/6/6-cart_default.jpg
+6774 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/7/7-cart_default.jpg
+6873 [AsyncHttpClient-1-4] WARN  o.a.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+6966 [main] INFO  tests.BaseTest.class - Driver is closed

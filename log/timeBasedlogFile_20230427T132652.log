@@ -1,0 +1,23 @@
+13080 [main] INFO  pages.base.BasePage - Waiting for Quick view
+13167 [main] INFO  pages.base.BasePage - Waiting for Quick view
+13698 [main] INFO  pages.base.BasePage - Element: Quick view has been clicked
+13891 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/5/5-cart_default.jpg
+14137 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/6/6-cart_default.jpg
+14386 [main] INFO  pages.base.BasePage - Waiting for image http://automationpractice.pl/img/p/7/7-cart_default.jpg
+14498 [AsyncHttpClient-1-4] WARN  o.a.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+14576 [main] INFO  tests.BaseTest.class - Driver is closed

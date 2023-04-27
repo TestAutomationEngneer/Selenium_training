@@ -1,0 +1,14 @@
+977 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+999 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\djach\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+3463 [main] INFO  tests.BaseTest.class - Driver is opened
+3715 [main] INFO  pages.base.BasePage - Waiting for WOMEN
+3811 [main] INFO  pages.base.BasePage - Waiting for Blouses
+3928 [main] INFO  pages.base.BasePage - Waiting for Blouses
+4672 [main] INFO  pages.base.BasePage - Element: Blouses has been clicked
+4750 [main] INFO  pages.base.BasePage - Waiting for 
+4953 [main] INFO  pages.base.BasePage - Waiting for 
+5050 [main] INFO  pages.base.BasePage - Waiting for Quick view
+5141 [main] INFO  pages.base.BasePage - Waiting for Quick view
+5288 [main] INFO  pages.base.BasePage - Element: Quick view has been clicked
+6416 [main] INFO  pages.base.BasePage - Waiting for 
+16834 [main] INFO  tests.BaseTest.class - Driver is closed
