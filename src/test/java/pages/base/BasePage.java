@@ -1,6 +1,5 @@
 package pages.base;
 
-import configuration.WebListener;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,8 +17,6 @@ public abstract class BasePage {
     protected WebDriverWait wait;
 
     private Actions actions;
-
-    private WebListener webListener = new WebListener();
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
