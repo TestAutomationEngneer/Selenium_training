@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -31,6 +33,17 @@ public class BrowserEnv {
 
     private void initBrowserSettings() throws IOException {
         switch (this.browserName) {
+            case "edge" -> {
+                EdgeOptions options = new EdgeOptions();
+                WebDriverManager.edgedriver().setup();
+                options.addArguments("--start-maximized");
+                options.addArguments("--remote-allow-origins=*");
+                if (this.headlessBrowser) {
+                    options.addArguments("--headless");
+                }
+                driver = new EdgeDriver(options);
+            }
+
             case "chrome" -> {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 WebDriverManager.chromedriver().setup();
