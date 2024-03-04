@@ -14,77 +14,75 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.BlousesPage;
-import pages.BlousesPagePopUp;
-import pages.TopMenuPage;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FillFormTest {
+public class WebTableSimpleTest {
 
     private static WebDriver driver;
-    private static Logger logger = LoggerFactory.getLogger("tests.FillFormTest.class");
+    private static Logger logger = LoggerFactory.getLogger("tests.WebTableTest.class");
     private final String browserName = "chrome";
     private final boolean headlessBrowser = false;
-    private final String APP_URL = "http://www.automationpractice.pl/index.php";
-
-    //private String bitaSmietana;
+    private final String APP_URL = "https://cosmocode.io/automation-practice-webtable/";
 
 
     @Test
-    @DisplayName("Fill form")
-    void TopMenuVerification() {
-        //selektory css
-        https://devqa.io/selenium-css-selectors/
-
+    @DisplayName("Check countries and capitals")
+    void WebTableVerification() {
 
         logger.info("Start test");
         driver = getDriver();
         driver.get(APP_URL);
 
         //set implicit wait
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        //fluent wait
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(30))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class);
 
-        //1 - click on contact us
-        WebElement contactUs = driver.findElement(By.cssSelector("#contact-link > a"));
-        contactUs.click();
 
-        //2 - fill form: Select one option eg webmaster
-        //https://www.selenium.dev/documentation/webdriver/support_features/select_lists/#select-option
-        WebElement subjectHeading = driver.findElement(By.cssSelector("#id_contact"));
-        Select select = new Select(subjectHeading);
-        select.selectByVisibleText("Webmaster");
+        //1. count how many rows are in the table
+        //expected result: 197
+        List<WebElement> table = driver.findElements(By.cssSelector("#countries > tbody > tr"));
+        int rows = table.size();
+        logger.info("Number of rows: " + rows);
+        assertThat(rows).isEqualTo(197);
 
-        //3 - fill form: email
-        WebElement email = driver.findElement(By.cssSelector("#email"));
-        email.sendKeys("myemail@op.pl");
+        //3. Check Poland Visited checkboxes #139
+        List<WebElement> elements = driver.findElements(By.cssSelector(".hasVisited[type='checkbox']"));
+        //wait for element to be clickable
+        WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(elements.get(139)));
 
-        //  4 - fill form: order reference
-        WebElement orderReference = driver.findElement(By.cssSelector("#id_order"));
-        orderReference.sendKeys("13-15-17");
+        logger.info("Checkbox - before click -> Selected: " + checkbox.isSelected());
+        logger.info("Checkbox - before click -> Displayed: " + checkbox.isDisplayed());
+        logger.info("Checkbox - before click -> Enabled: " + checkbox.isEnabled());
 
-        //  5 - fill form: message
-        WebElement message = driver.findElement(By.cssSelector("#message"));
-        message.sendKeys("I have a problem with my order");
+        //scroll to element
+        new Actions(driver)
+                .scrollToElement(elements.get(145))
+                .perform();
 
-        //6 - attach file
-        WebElement fileUpload = driver.findElement(By.cssSelector("#fileUpload"));
-        fileUpload.sendKeys("C:\\Users\\dhryciuk\\Desktop\\backup\\sii dokumenty\\szkolenie SII - Selenium\\projekt_automationPractice\\mouseOperations\\test.txt");
 
-        //7 - click on send button
-        WebElement sendButton = driver.findElement(By.cssSelector("#submitMessage"));
-        sendButton.click();
+        //click on checkbox
+        checkbox.click();
+        logger.info(">>>Checkbox clicked");
 
-        //8 - verify if message was sent
-        WebElement successMessage = driver.findElement(By.cssSelector(".alert-success"));
-        String messageText = successMessage.getText();
-        assertThat(messageText).contains("Your message has been successfully sent to our team.");
-
+        logger.info("Checkbox - after click -> Selected: " + checkbox.isSelected());
+        logger.info("Checkbox - after click -> Displayed: " + checkbox.isDisplayed());
+        logger.info("Checkbox - after click -> Enabled: " + checkbox.isEnabled());
+        assertThat(checkbox.isSelected()).isTrue();
 
         driver.quit();
         logger.info("Driver is closed");
