@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00a6ed8b-3cf0-4232-8a9e-1cf552d27945" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/noweTesty/AdvanceSeleniumTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/noweTesty/AdvanceSeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/noweTesty/RandomizationSeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/noweTesty/SimpleSeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/noweTesty/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/WebListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MouseOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MouseOperationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,31 +32,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2OfIQiI7xqYDaR6jFlmRdXSQDUL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dhryciuk/Desktop/backup/sii dokumenty/szkolenie SII - Selenium/projekt_automationPractice/mouseOperations/pom.xml&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.packagesearch.PackageSearchGeneralConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/hryci/Desktop/selenium/Selenium_training/src/test/java/tests/noweTesty",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.packagesearch.PackageSearchGeneralConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\djach\Desktop\Java\MouseOperations\src\test\java" />
@@ -66,34 +63,35 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MouseOperationsTest.TopMenuVerification">
-    <configuration name="BadTest.TopMenuVerification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdvanceSeleniumTableTest.getAdvanceSimple">
+    <configuration name="AdvanceSeleniumTableTest.getAdvanceSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MouseOperations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.noweTesty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BadTest" />
-      <option name="METHOD_NAME" value="TopMenuVerification" />
+      <option name="PACKAGE_NAME" value="tests.noweTesty" />
+      <option name="MAIN_CLASS_NAME" value="tests.noweTesty.AdvanceSeleniumTableTest" />
+      <option name="METHOD_NAME" value="getAdvanceSimple" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MouseOperationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdvanceSeleniumTest.getAdvanceSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MouseOperations" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.noweTesty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MouseOperationsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="tests.noweTesty" />
+      <option name="MAIN_CLASS_NAME" value="tests.noweTesty.AdvanceSeleniumTest" />
+      <option name="METHOD_NAME" value="getAdvanceSimple" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,11 +112,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RandomizationSeleniumTest.randomizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MouseOperations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.noweTesty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.noweTesty" />
+      <option name="MAIN_CLASS_NAME" value="tests.noweTesty.RandomizationSeleniumTest" />
+      <option name="METHOD_NAME" value="randomizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleSeleniumTest.getTitleSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MouseOperations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.noweTesty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.noweTesty" />
+      <option name="MAIN_CLASS_NAME" value="tests.noweTesty.SimpleSeleniumTest" />
+      <option name="METHOD_NAME" value="getTitleSimple" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdvanceSeleniumTableTest.getAdvanceSimple" />
+        <item itemvalue="JUnit.AdvanceSeleniumTest.getAdvanceSimple" />
+        <item itemvalue="JUnit.RandomizationSeleniumTest.randomizeTest" />
+        <item itemvalue="JUnit.SimpleSeleniumTest.getTitleSimple" />
         <item itemvalue="JUnit.MouseOperationsTest.TopMenuVerification" />
-        <item itemvalue="JUnit.BadTest.TopMenuVerification" />
-        <item itemvalue="JUnit.MouseOperationsTest" />
       </list>
     </recent_temporary>
   </component>
